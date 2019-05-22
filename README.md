@@ -31,7 +31,7 @@ and the `authorise` "users" file contains a test user:
 YOUR-USERNAME    Cleartext-Password := "YOUR-USERPASSWORD"
 ```
 
-Or you clone the [github repo](http://) and modify the files `clients.conf` and `authorise` to your own. But then you need to use the volume mount flag, shown as follow:
+Or you clone the [github repo](https://github.com/WAGO/pfc-freeradius-server) and modify the files `clients.conf` and `authorise` to your own. But then you need to use the volume mount flag, shown as follow:
 
 ```bash
 $ docker run --name my-radius \   
@@ -52,9 +52,9 @@ For debbuging your configuartion you can use the `-X` attribut:
 
 ### HowTo modify your Wago device for IEEE802.1x
 
-Copy the file `wpa_supplicant.conf` from [github repo](http://) to `/etc/` on your Wago device and modify it to yours.
+Copy the file `wpa_supplicant.conf` from [github repo](https://github.com/WAGO/pfc-freeradius-server) to `/etc/` on your Wago device and modify it to yours.
 
-Copy the file `wpa_supplicant` from [github repo](http://) to `/etc/init.d/` and make a symlink with the following command.
+Copy the file `wpa_supplicant` from [github repo](https://github.com/WAGO/pfc-freeradius-server) to `/etc/init.d/` and make a symlink with the following command.
 
 ```bash
 ln -s /etc/init.d/wpa_supplicant /etc/rc.d/S97_wpa_supplicant
