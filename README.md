@@ -23,11 +23,13 @@ Where `clients.conf` contains a simple client definition
 client YOUR-NAME {                 
     ipaddr = YOUR-NETWORK -> for example 172.17.0.0/16              
     secret = YOUR-SECRET -> for example testing123                   
-}```
+}
+```
 
 and the `authorise` "users" file contains a test user:
 ```bash
-YOUR-USERNAME    Cleartext-Password := "YOUR-USERPASSWORD"```
+YOUR-USERNAME    Cleartext-Password := "YOUR-USERPASSWORD"
+```
 
 Or you clone the [github repo](http://) and modify the files `clients.conf` and `authorise` to your own. But then you need to use the volume mount flag, shown as follow:
 
@@ -35,7 +37,8 @@ Or you clone the [github repo](http://) and modify the files `clients.conf` and 
 $ docker run --name my-radius \   
 -v $PWD/clients.conf:/etc/raddb/clients.conf \   
 -v $PWD/authorize:/etc/raddb/mods-config/files/authorize \  
--d wagoautomation/pfc-freeradius-server```
+-d wagoautomation/pfc-freeradius-server
+```
 
 ### How to use this images
  With standard configuration you can the image shwon as follow:
