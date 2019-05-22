@@ -1,0 +1,34 @@
+#!/bin/sh
+#
+# wpa_supplicant
+#
+PATH=/usr/bin:/usr/sbin:/bin:/sbin
+PREFIX="wpa_supplicant: "
+WPA="/sbin/wpa_supplicant"
+WPA_CONF="/etc/wpa_supplicant.conf"
+WPA_IF="br0"
+WPA_DRIVER="wired"
+WPA_DAEMON_OPT="-B"
+WPA_OPTIONS="-D$WPA_DRIVER -i$WPA_IF -c$WPA_CONF $WPA_DAEMON_OPT"
+case $1 in
+start)
+echo "${PREFIX}starting"
+if start-stop-daemon --start --quiet --oknodo --exec ${WPA} -- ${WPA_OPTIONS}; then
+echo "${PREFIX}done"
+else
+echo "${PREFIX}error, could not start wpa_supplicant"
+fi
+;;
+stop)
+echo "${PREFIX}stoppping"
+if start-stop-daemon --stop --quiet --oknodo --exec ${WPA}; then
+echo "${PREFIX}done"
+else
+echo "${PREFIX}error, could not stop wpa_supplicant "
+fi
+;;
+*)
+echo "${PREFIX}usage: ${0} [start|stop]"
+exit 1
+;;
+esac

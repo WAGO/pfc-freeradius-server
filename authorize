@@ -1,0 +1,8 @@
+#
+# The Wago testing user which is in most of the
+# examples.
+#
+
+wago Cleartext-Password := "hello"
+	Reply-Message := "Hello, %{User-Name}"
+
