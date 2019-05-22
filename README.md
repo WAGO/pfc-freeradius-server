@@ -1,7 +1,11 @@
 ## Statistics Docker Hub
+[![DockerHub stars](https://img.shields.io/docker/stars/wagoautomation/pfc-freeradius-server.svg?flat&logo=docker "DockerHub stars")](https://hub.docker.com/r/wagoautomation/pfc-freeradius-server)
+[![DockerHub pulls](https://img.shields.io/docker/pulls/wagoautomation/pfc-freeradius-server.svg?flat&logo=docker "DockerHub pulls")](https://hub.docker.com/r/wagoautomation/pfc-freeradius-server)
+[![DockerHub build-status](https://img.shields.io/docker/cloud/build/wagoautomation/pfc-freeradius-server.svg?flat&logo=docker "DockerHub build-status")](https://hub.docker.com/r/wagoautomation/pfc-freeradius-server/builds)
 
 ## Statistics Git Hub
-
+[![GitHub issues](https://img.shields.io/github/issues/WAGO/pfc-freeradius-server.svg?flat&logo=github "GitHub issues")](https://github.com/WAGO/pfc-freeradius-server/issues)
+[![GitHub stars](https://img.shields.io/github/stars/WAGO/pfc-freeradius-server.svg?flat&logo=github "GitHub stars")](https://github.com/WAGO/pfc-freeradius-server/stargazers)
 
 
 # How to use Freeradius Server on Wago Device
