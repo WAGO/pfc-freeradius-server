@@ -10,7 +10,6 @@ MAINTAINER Wago <sergei.ikkert@wago.com>
 #
 #  Install build tools
 #
-RUN set -x
 RUN apk update
 RUN apk add git gcc make
 
