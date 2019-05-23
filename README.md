@@ -54,9 +54,9 @@ For debbuging your configuartion you can use the `-X` attribut:
  $ docker run --name my-radius -p 1812-1813:1812-1813/udp wagoautomation/pfc-freeradius-server -X
 ```
 
-### HowTo modify your Wago device for IEEE802.1x
+### How to modify your Wago device as supplicant for IEEE802.1x
 
-Copy the file `wpa_supplicant.conf` from [github repo](https://github.com/WAGO/pfc-freeradius-server) to `/etc/` on your Wago device and modify it to yours.
+Copy the file `wpa_supplicant.conf` from [github repo](https://github.com/WAGO/pfc-freeradius-server) to `/etc/` on your Wago device and modify the credentials.
 
 Copy the file `wpa_supplicant` from [github repo](https://github.com/WAGO/pfc-freeradius-server) to `/etc/init.d/` and make a symlink with the following command.
 
